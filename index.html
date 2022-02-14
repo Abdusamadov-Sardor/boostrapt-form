@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>boostrapt-form-sardor</title>
+</head>
+<body>
+  <!-- boostrapt-form-sardor -->
+  
+  <div class="container">
+    
+    <h2 class="text-center my-5">
+      Movies catalog
+    </h2>
+    
+    
+    <div class="row">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/"  autocomplete="off">
+          <input class="form-control p-2 mb-3" type="text" placeholder="ave" aria-label="Default-input">
+          <input class="form-control  p-2 mb-3" type="text" placeholder="5" aria-label="Default-input">
+          <select class="form-select p-2 mb-3"   aria-label="Default select">
+            <option  value="1">One</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option selected value="All">All</option>
+          </select>
+          <select class="form-select p-2 mb-3" aria-label="Default select" >
+            <option  value="High">High</option>
+            <option value="Middle">Middle</option>
+            <option value="Low">Low</option>
+            <option selected value="Rating">Rating</option>
+          </select>
+          <button type="submit" class="btn w-100 btn-primary mb-4">Search</button>
+        </form>
+        
+        <h2 class="fw-bold">
+          Bookmarked movies
+        </h2>
+        <!-- <ul class="border list-unstyled ">
+          <li class="fw-bold fs-5  d-flex flex-column mb-2 border-bottom">Avengers: Infinity War
+            <button type="submit" class="btn w-25 mt-2 ms-3 mb-3 btn-danger p-2"> Remove</button>
+          </li>
+          <li class="fw-bold fs-5  d-flex flex-column mb-3">The Avengers
+            <button type="submit" class="btn w-25 mt-2 ms-3 mb-3 btn-danger p-2"> Remove</button>
+            
+          </li>
+          <li class="fw-bold fs-5 d-flex flex-column mb-2">12 Years a Slave
+            <button type="submit" class="btn w-25 mt-2 ms-3 mb-3 btn-danger p-2"> Remove</button>
+          </li>
+        </ul> -->
+        
+        <div class="row-12 d-flex flex-column mb-5">
+          <div class="col border p-2 ">
+            <p class="fw-bold ms-2 ">Avengers: Infinity War</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+          </div>
+          <div class="col border-end border-start p-2">
+            <p class="fw-bold ms-2 ">The Avengers</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+            
+          </div>
+          <div class="col border p-2">
+            <p class="fw-bold ms-2 ">12 Years a Slave</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-8 ">
+        <h3>Search result: 39</h3>
+        <div class="alert alert-success w-100" role="alert">
+          Use the form on the left to seach for a movie
+        </div>
+        
+        <div class="row-12 d-flex flex-nowrap ">
+          <div class="col rounded-1 me-2 border border-1 me-2">
+            <img class="card-img-top" src="https://cdn.vox-cdn.com/thumbor/IOIk_o3Tx3Ic8vPFvEOzyzB_OWQ=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23184567/avengers_battle_of_new_york.jpg " width="340" height="200"   alt="image">
+            <ul class="p-3 list-unstyled">
+              <li class="fw-bold fs-5 mb-2">Avengers: Infinity War</li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/calendar-silhouette.png" width="20" height="20" alt="The calendar">
+                <span class="ms-2">2018</span>
+              </li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/star.png" width="20" height="20" alt="">
+                <span class="ms-2">8.7</span>
+              </li>
+              <li>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <button type="button" class="p-2 border-primary text-primary bg-light rounded">Watch trailer</button>
+                  <button type="button" class="p-2 text-info ms-1 border-info bg-light  rounded">More info</button>
+                  <button type="button" class="p-2 ms-1 border-success text-success bg-light rounded">Bookmark</button>
+                </form>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="col rounded-1 border border-1">
+            <img class="card-img-top"  src="https://image.cnbcfm.com/api/v1/image/105172198-Avengers-Infinity-War.jpg?v=1529478136&amp;w=929&amp;h=523" width="340" height="200"   alt="image">
+            <ul class="p-3 list-unstyled">
+              <li class="fw-bold fs-5 mb-2">The Avengers</li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/calendar-silhouette.png" width="20" height="20" alt="The calendar">
+                <span class="ms-2">2012</span>
+              </li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/star.png" width="20" height="20" alt="">
+                <span class="ms-2">8.1</span>
+              </li>
+              <li>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <button type="button" class="p-2 border-primary  text-primary bg-light rounded">Watch trailer</button>
+                  <button type="button" class="p-2 ms-1 border-info text-info bg-light rounded">More info</button>
+                  <button type="button" class="p-2 ms-1 border-success text-success bg-light rounded">Bookmark</button>
+                </form>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <nav  aria-label="Default nav">
+          <ul class="pagination pagination mt-5 p-4 justify-content-center">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+      
+      
+    </div>
+    
+    
+  </div>
+  
+</body>
+</html>
